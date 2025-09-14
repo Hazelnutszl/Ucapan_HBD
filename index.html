@@ -45,9 +45,8 @@
       padding: 0 20px;
       text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
     }
-    audio {
-      display: none;
-    }
+    audio { display: none; }
+
     #playBtn {
       position: fixed;
       top: 50%;
@@ -70,6 +69,19 @@
       background: rgba(255, 255, 255, 0.9);
       transform: translate(-50%, -50%) scale(1.1);
     }
+
+    /* Foto samping */
+    .side-img {
+      position: absolute;
+      width: 120px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .left-top { top: 10%; left: 2%; }
+    .left-bottom { bottom: 10%; left: 2%; }
+    .right-top { top: 10%; right: 2%; }
+    .right-bottom { bottom: 10%; right: 2%; }
   </style>
 </head>
 <body>
@@ -77,7 +89,7 @@
   <h2>💐 From: Asar 💐</h2>
 
   <p>
-    Dear Atsna, walaupun kita baru kenal, aku merasa sudah menemukan sosok teman yang menyenangkan dan penuh kebaikan. Pertemuan singkat ini aja sudah cukup bikin aku sadar kalau kamu adalah orang yang istimewa, yang bisa bikin suasana jadi lebih hangat.
+    Dear Atsna, walaupun kita baru kenal, aku rasa udah menemukan sosok teman yang menyenangkan dan penuh kebaikan. Pertemuan singkat ini aja sudah cukup bikin aku sadar kalau kamu adalah orang yang istimewa, yang bisa bikin suasana jadi lebih hangat.
   </p>
   <p>
     Di hari spesialmu ini, aku doakan semoga kebahagiaan selalu menyertaimu di setiap langkah. Semoga umur baru membawa banyak keberkahan, kesehatan, dan kesempatan indah yang selama ini kamu impikan. Jangan pernah ragu buat terus bermimpi, karena aku yakin kamu bisa mencapainya satu per satu.
@@ -85,6 +97,12 @@
   <p>
     Semoga ini jadi awal dari perjalanan baru yang lebih cerah, dan semoga juga pertemanan kita bisa terus terjalin lebih dekat ke depannya. 🌸
   </p>
+
+  <!-- Foto samping -->
+  <img src="foto1.jpg" class="side-img left-top" alt="foto kiri atas">
+  <img src="foto2.jpg" class="side-img left-bottom" alt="foto kiri bawah">
+  <img src="foto3.jpg" class="side-img right-top" alt="foto kanan atas">
+  <img src="foto4.jpg" class="side-img right-bottom" alt="foto kanan bawah">
 
   <!-- Lagu Hindia -->
   <audio id="bg-music" loop>
